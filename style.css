@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+body{
+    background-color: rgb(19, 15, 16);
+}
+.top{
+    background-color: whitesmoke;
+}
+.top h1{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    height: 4vh;
+    position: relative;
+    color: rgb(5, 3, 37);
+    opacity: 0.4;
+    letter-spacing: 30px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+.top h1::first-letter{
+    font-size: 1.4em;
+}
+nav{
+    background-color: black;
+    height: 5vh;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 600px;
+    height: 100%;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    
+
+}
+.content{
+    background-image: url(las11.jpg);
+    width: 100%;
+    height: 91vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+}
+.lay{
+    background-color: black;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+}
+.main{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    right: 17%;
+    top: 20%;
+}
+.main h1{
+    text-transform: uppercase;
+    font-family: 'Shippori Mincho B1', serif;;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.main p{
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 8px;
+    animation: tex 15s ease-in-out  infinite ;
+    
+    color: rgb(235, 224, 204);
+    
+    
+    
+    
+}
+.main p:nth-child(2){
+    
+    margin-top: 10px;
+    padding-top: 15px;
+    
+}
+.text{
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    
+    
+}
+@keyframes tex{
+    19%{transform: translateY(0);}
+    60%{transform: translateY(-200px);}
+   
+    
+    
+    
+}
+h2#shop a{
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid;
+    width: 150px;
+    padding: 2px;
+    padding-right: 8px;
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    padding-left: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.logo img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+ img:hover{
+    transform: translateY(-20px);
+    transform: scale(1.1);
+    transition: all 3s;
+}
+.logo{
+    position: absolute;
+    display: flex;
+    width: 120px;
+    
+    justify-content: space-between;
+    top: 0;
+    right: 3%;
+}
+
+#menu{
+    display: none;
+}
+#men{
+    display: none;
+}
+@media screen and (max-width:500px){
+    .top{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .content{
+        height: 100vh;
+    }
+    .main{
+        left: 25%;
+        
+    }
+    .main h1{
+        font-size: 2rem;
+        
+        width: 70vw;
+        position: relative;
+        left: -10px;
+    }
+    .main p{
+        font-size: 1.4rem;
+    }
+    .text{
+        width: 100%;
+        height: 150px;
+    }
+    h2#shop{
+        position: absolute;
+        left: 5%;
+    }
+    @keyframes tex{
+        19%{transform: translateY(0);}
+        60%{transform: translateY(-130px);}
+    }
+    #menu{
+        display: none;
+        position: absolute;
+        background-color: whitesmoke;
+        opacity: 0.7;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 5;
+        
+        animation: men 1.3s ease-in-out 
+    }
+    @keyframes men{
+        0%{width: 0px;}
+        100%{width: 60%;}
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 50%;
+        justify-content: space-around;
+        
+        
+    }
+    li a{
+        color: black; 
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+    
+    #men{
+        display: block;
+        position: absolute;
+        right: 1%;
+        top: 2%;
+        z-index: 1;
+    }
+    #bar{
+        width: 40px;
+        height: 30px;
+        z-index: 1;
+    }
+    #cls{
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+@media screen and (max-width:367px){
+    .main h1{
+        font-size: 1.6rem;
+    }
+}
+
+
